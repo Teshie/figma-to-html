@@ -7,8 +7,8 @@ const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 export default function App() {
   const [checkAll, setCheckAll] = useState(true);
   const [checkBox, setCheckBox] = useState();
-  const [text, setText] = useState("User");
-  const [taxx, setTax] = useState(10);
+  const [text, setText] = useState("");
+  const [taxx, setTax] = useState();
   const [searchValue, setSearchValue] = useState("");
   return (
     <div
@@ -23,8 +23,8 @@ export default function App() {
       <Formik
         initialValues={{
           applicable_items: [],
-          tax: taxx / 100,
-          name: text,
+          tax: 10 / 100,
+          name: "USER",
         }}
         onSubmit={async (values) => {
           await sleep(500);
@@ -67,11 +67,7 @@ export default function App() {
               }}
               role="group"
               aria-labelledby="my-radio-group"
-            >
-              <label>
-                <Field type="checkbox" name="name" value="jksnhd" />
-              </label>
-            </div>
+            ></div>
             <div
               style={{
                 display: "flex",
