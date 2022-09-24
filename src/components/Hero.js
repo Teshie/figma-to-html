@@ -24,7 +24,7 @@ const Hero = () => {
           />
         </div>
       </div>
-      <div className="m-4 grid place-items-center gap-2 sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3 ">
+      <div className="m-4 grid place-items-center gap-2 sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3 ">
         <div className="border border-gray-300 h-full">
           <div className="flex justify-between items-center relative">
             <div className=" p-2 mt-1">
