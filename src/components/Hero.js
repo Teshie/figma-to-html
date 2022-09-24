@@ -95,7 +95,7 @@ const Hero = () => {
       <div className="p-1 ">
         <span className="font-bold">BIGGEST UPCOMING LOTTERY DRAW</span>
       </div>
-      <div className="p-1 grid gap-2  sm:grid-cols-1 md:grid-cols-1 xl:grid-cols-3 2xl:grid-cols-3">
+      <div className="p-1 grid gap-2  sm:grid-cols-1 md:grid-cols-3 xl:grid-cols-3 2xl:grid-cols-3">
         <div className="border grid  border-gray-300 h-full">
           <div className="flex justify-around items-center relative">
             <div className=" p-2 mt-1">
